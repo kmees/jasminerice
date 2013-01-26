@@ -14,6 +14,10 @@ module Jasminerice
   mattr_accessor :fixture_path
   @@fixture_path = 'spec/javascripts/fixtures'
 
+  # Name of the main requirejs module
+  mattr_accessor :requirejs_module
+  @@requirejs_module = 'main'
+
   # Default way to setup Jasminerice. Run rails generate jasminerice:install to create
   # a fresh initializer with all configuration values.
   def self.setup
